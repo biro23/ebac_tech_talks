@@ -1,3 +1,30 @@
-body {
-  background-color:green;
+
+@use 'hero';
+//reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  color: #fff;
+}
+
+// classe para o container, margem: 0 auto para centralizar
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+
+  // criando uma nova media query, ajustando o responsivo para o tablet e celular, 640px funciona para celulares
+
+  @media (max-width: 640px) {
+    max-width: 80%;
+  }
+
+  // tela de netbook
+
+  @media (max-width: 1024px){
+    max-width: 90%;
+  }
 }
