@@ -10,8 +10,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.scss">
 
-
-
 </head>
 
 <body>
@@ -19,11 +17,43 @@
   <header class="hero">
     <div class="container">
       <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
+      <p class="hero__text">
+        O maoir evento de tecnologia do Brasil começa em 10d 12h 20m 15s
+      </p>
     </div>
-    <P class="hero__text">
-      O maoir evento de tecnologia do Brasil começa em 10d 12h 20m 15s
-    </P>
+    <div class="infos-bar">
+      <ul class="infos-bar__infos">
+        <li class="infors-bar__infos__item">
+          <b>Localização</b>
+          Allianz Parque - Barra Funda - SP
+        </li>
+        <li class="infors-bar__infos_item" >
+          <b>Preço</b>
+          A partir de $120
+        </li>
+        <li class="infors-bar__infos__item">
+          <b>Quando</b>
+          12/12/2022 ás 19hs
+        </li>
+      </ul>
+      <a href="#" class="button button-primary">
+        Garanta sua vaga
+      </a>
+    </div>
   </header>
+
+  <!-- logo depois do header vamos ter uma section -->
+  <!-- teremos um container para limitar a largura do conteudo -->
+  <!-- logo abaixo vamos ter uma div para conter todo conteudo de texto do paragrafo -->
+  <section class="event">
+    <div class="container">
+      <div class="event__details">
+        <h2 class="event__details__title">Front-end</h2>
+        <p class="event__details__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid obcaecati harum ducimus! Suscipit nemo impedit saepe, ab aut sint deleniti distinctio, sequi itaque fugit tempore consequatur. Quod facilis ipsa sit?</p>
+      </div>
+      <img class="event__image" src="./images/frontend.png" alt="Front-end">
+    </div>
+  </section>
 
   <script src="./scripts/main.js"></script>
 

@@ -1,5 +1,8 @@
-
 @use 'hero';
+@use 'components/infos_bar';
+@use 'components/buttons';
+@use 'event';
+
 //reset
 * {
   margin: 0;
@@ -7,6 +10,7 @@
   box-sizing: border-box;
   font-family: Roboto, sans-serif;
   color: #fff;
+  list-style: none;
 }
 
 // classe para o container, margem: 0 auto para centralizar

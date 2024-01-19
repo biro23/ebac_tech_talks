@@ -1,0 +1,42 @@
+// display: flex, para ficar um ao lado do outro
+
+// precisa importar esse arquivo no main.css
+/* Correção: Corrigir seletor de classes */
+.infos-bar {
+  padding: 16px 34px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+
+  &__infos {
+    display: flex;
+    gap: 40px;
+
+    &__item {
+      font-size: 14px;
+      color: #000;
+
+      b {
+        color: #000;
+        font-size: 18px;
+        display: block;
+      }
+    }
+  }
+  @media (max-width: 640px) {
+    display: block;
+
+    &__infos {
+      display: block;
+
+      &__item {
+        margin-bottom: 24px;
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    &__infos {
+      gap: 16px;
+    }
+  }
+}
